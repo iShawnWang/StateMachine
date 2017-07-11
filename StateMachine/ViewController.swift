@@ -9,17 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    lazy var uiState:ViewStateMachine = {
+        let machine = ViewStateMachine(superView: self.view, stateHandler: ViewStateHandler())
+        return machine
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
+            
+            let failedView = StateView.loadFromXib()
+            failedView.label.text = "failed"
+            self.uiState.enter(state:ViewState(failed:failedView))
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
+                
+                let noDataView = StateView.loadFromXib()
+                noDataView.label.text = "noData"
+                self.uiState.enter(state: ViewState(noData:noDataView))
+                
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
