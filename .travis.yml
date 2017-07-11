@@ -1,0 +1,4 @@
+language: Swift
+osx_image: xcode8.3
+xcode_project: StateMachine.xcodeproj
+xcode_scheme: StateMachine
