@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E2B54D21F135412002F17CA /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B54D11F135412002F17CA /* State.swift */; };
 		0E2B54D41F135418002F17CA /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B54D31F135418002F17CA /* StateMachine.swift */; };
-		0E2B54D91F136308002F17CA /* ViewStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B54D81F136308002F17CA /* ViewStateMachine.swift */; };
-		0E2B54DB1F1383CB002F17CA /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B54DA1F1383CB002F17CA /* Error.swift */; };
 		0E2B54DF1F1388BF002F17CA /* StateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E2B54DE1F1388BF002F17CA /* StateView.xib */; };
 		0E2B54E11F1388C7002F17CA /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B54E01F1388C7002F17CA /* StateView.swift */; };
-		0E2B54E31F138984002F17CA /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B54E21F138984002F17CA /* NSObject+Extension.swift */; };
 		0E2CDA881F13536D00DFF676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CDA871F13536D00DFF676 /* AppDelegate.swift */; };
 		0E2CDA8A1F13536D00DFF676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CDA891F13536D00DFF676 /* ViewController.swift */; };
 		0E2CDA8D1F13536D00DFF676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2CDA8B1F13536D00DFF676 /* Main.storyboard */; };
@@ -21,6 +18,9 @@
 		0E2CDA921F13536D00DFF676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2CDA901F13536D00DFF676 /* LaunchScreen.storyboard */; };
 		0E2CDA9D1F13536D00DFF676 /* StateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CDA9C1F13536D00DFF676 /* StateMachineTests.swift */; };
 		0E2CDAA81F13536D00DFF676 /* StateMachineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CDAA71F13536D00DFF676 /* StateMachineUITests.swift */; };
+		0E7308531F14BF790099232E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7308511F14BF790099232E /* ViewState.swift */; };
+		0E7308541F14BF790099232E /* ViewStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7308521F14BF790099232E /* ViewStateMachine.swift */; };
+		0E7308571F14BFB10099232E /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7308561F14BFB10099232E /* NSObject+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +43,8 @@
 /* Begin PBXFileReference section */
 		0E2B54D11F135412002F17CA /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		0E2B54D31F135418002F17CA /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
-		0E2B54D81F136308002F17CA /* ViewStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStateMachine.swift; sourceTree = "<group>"; };
-		0E2B54DA1F1383CB002F17CA /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		0E2B54DE1F1388BF002F17CA /* StateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StateView.xib; sourceTree = "<group>"; };
 		0E2B54E01F1388C7002F17CA /* StateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
-		0E2B54E21F138984002F17CA /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		0E2CDA841F13536D00DFF676 /* StateMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2CDA871F13536D00DFF676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E2CDA891F13536D00DFF676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +58,9 @@
 		0E2CDAA31F13536D00DFF676 /* StateMachineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateMachineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2CDAA71F13536D00DFF676 /* StateMachineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineUITests.swift; sourceTree = "<group>"; };
 		0E2CDAA91F13536D00DFF676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E7308511F14BF790099232E /* ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		0E7308521F14BF790099232E /* ViewStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStateMachine.swift; sourceTree = "<group>"; };
+		0E7308561F14BFB10099232E /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,8 @@
 			children = (
 				0E2B54D11F135412002F17CA /* State.swift */,
 				0E2B54D31F135418002F17CA /* StateMachine.swift */,
-				0E2B54D81F136308002F17CA /* ViewStateMachine.swift */,
-				0E2B54DA1F1383CB002F17CA /* Error.swift */,
+				0E7308501F14BF790099232E /* ViewStateMachine */,
+				0E7308551F14BFB10099232E /* Helper */,
 			);
 			path = StateMachine;
 			sourceTree = "<group>";
@@ -122,7 +122,6 @@
 		0E2CDA861F13536D00DFF676 /* StateMachine */ = {
 			isa = PBXGroup;
 			children = (
-				0E2B54E21F138984002F17CA /* NSObject+Extension.swift */,
 				0E2B54D01F1353BF002F17CA /* StateMachine */,
 				0E2CDA871F13536D00DFF676 /* AppDelegate.swift */,
 				0E2CDA891F13536D00DFF676 /* ViewController.swift */,
@@ -152,6 +151,23 @@
 				0E2CDAA91F13536D00DFF676 /* Info.plist */,
 			);
 			path = StateMachineUITests;
+			sourceTree = "<group>";
+		};
+		0E7308501F14BF790099232E /* ViewStateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				0E7308511F14BF790099232E /* ViewState.swift */,
+				0E7308521F14BF790099232E /* ViewStateMachine.swift */,
+			);
+			path = ViewStateMachine;
+			sourceTree = "<group>";
+		};
+		0E7308551F14BFB10099232E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0E7308561F14BFB10099232E /* NSObject+Extension.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2CDA8A1F13536D00DFF676 /* ViewController.swift in Sources */,
-				0E2B54E31F138984002F17CA /* NSObject+Extension.swift in Sources */,
+				0E7308541F14BF790099232E /* ViewStateMachine.swift in Sources */,
 				0E2CDA881F13536D00DFF676 /* AppDelegate.swift in Sources */,
+				0E7308571F14BFB10099232E /* NSObject+Extension.swift in Sources */,
 				0E2B54D21F135412002F17CA /* State.swift in Sources */,
-				0E2B54D91F136308002F17CA /* ViewStateMachine.swift in Sources */,
-				0E2B54DB1F1383CB002F17CA /* Error.swift in Sources */,
 				0E2B54E11F1388C7002F17CA /* StateView.swift in Sources */,
+				0E7308531F14BF790099232E /* ViewState.swift in Sources */,
 				0E2B54D41F135418002F17CA /* StateMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

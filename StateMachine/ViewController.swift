@@ -9,9 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    lazy var uiState:ViewStateMachine = {
-        let machine = ViewStateMachine(superView: self.view, stateHandler: ViewStateHandler())
-        return machine
+    
+    let uiStateDelegate = DefaultViewStateMachineDelegate()
+    lazy var uiState:ViewStateMachine<DefaultViewStateMachineDelegate> = {
+        let m = ViewStateMachine(superView: self.view, delegate: self.uiStateDelegate)
+        return m
     }()
     
     override func viewDidLoad() {

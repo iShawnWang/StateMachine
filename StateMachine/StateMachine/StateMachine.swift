@@ -11,47 +11,39 @@ import Foundation
 // MARK: Delegate
 public protocol StateMachineDelegate{
     associatedtype State
+    
     func canEnter(state:State) -> Bool
     func transit(from:State?, to:State)
 }
 
-/// Protocol default Impl
+/// Protocol Default Impl
 extension StateMachineDelegate{
     func canEnter(state:State) -> Bool{
         return true
     }
 }
 
-// MARK: Impl
-struct StateHandler<T>:StateMachineDelegate {
-    typealias State = T
-    
-    func transit(from: T?, to: T) {
-        
-    }
-}
-
 // MARK: StateMachine
-public class StateMachine<Handler:StateMachineDelegate> {
+public class StateMachine<T:StateMachineDelegate> {
     
-    public let stateHandler:Handler
+    public let delegate:T
     
-    public init(stateHandler:Handler) {
-        self.stateHandler = stateHandler
+    public init(delegate:T) {
+        self.delegate = delegate
     }
     
-    public var currentState:Handler.State?{
+    public var currentState:T.State?{
         didSet{
-            stateHandler.transit(from: nil, to: currentState!)
+            delegate.transit(from: nil, to: currentState!)
         }
     }
     
     @discardableResult
-    public func enter(state:Handler.State) -> Bool {
-        if(!stateHandler.canEnter(state: state)){
+    public func enter(state:T.State) -> Bool {
+        if(!delegate.canEnter(state: state)){
             return false
         }
-        stateHandler.transit(from: currentState, to: state)
+        delegate.transit(from: currentState, to: state)
         return true
     }
 }

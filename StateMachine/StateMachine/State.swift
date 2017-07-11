@@ -8,6 +8,14 @@
 
 import Foundation
 
+///implement a state like this
+///
+///    enum ViewState:StateFul{
+///        case stat1,stat2(String),state3(AnyObject)
+///    }
 protocol StateFul{
     
 }
+
+
+
