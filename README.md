@@ -2,18 +2,18 @@
 
 [![Swift Version][swift-image]][swift-url] [![Build Status][travis-image]][travis-url] [![License][license-image]][license-url] [![codebeat-badge][codebeat-image]][codebeat-url]
 
-> A elegant State Machine to organize your ViewController
+> A simple State Machine to organize your ViewController
 
 # Usage
 
-There 2 main class, `ViewStateMachine` and `StateMachine`
+There 2 main class, [ViewStateMachine](https://github.com/iShawnWang/StateMachine/blob/master/StateMachine/StateMachine/ViewStateMachine/ViewStateMachine.swift) and [StateMachine](https://github.com/iShawnWang/StateMachine/blob/master/StateMachine/StateMachine/StateMachine.swift)
 1. `StateMachine` is a generic FSM
 2. `ViewStateMachine` is build on `StateMachine` for switching views when enter different state
 
 **Check demo code for example**
 
 ## **ViewStateMachine** 
-Check `ViewStateMachineDemo.swift` for example
+Check [ViewStateMachineDemo.swift](https://github.com/iShawnWang/StateMachine/blob/master/StateMachine/ViewStateMachineDemo.swift) for example
 
 #####  1. In your ViewController create `ViewStateMachine` and `DefaultViewStateMachineDelegate`
 `DefaultViewStateMachineDelegate` demonstrate switch view when state changed
@@ -35,7 +35,7 @@ Check `ViewStateMachineDemo.swift` for example
 
 ## **StateMachine**
 
-Check `StateMachineDemo.swift` for example
+Check [StateMachineDemo.swift](https://github.com/iShawnWang/StateMachine/blob/master/StateMachine/StateMachineDemo.swift) for example
 ##### 0. Create you state 
 
 ```swift
@@ -90,7 +90,7 @@ Check `StateMachineDemo.swift` for example
 - email : iShawnwang2333@gmail.com
 
 # License
-Distributed under the GPL v3 license. See [LICENSE]() for more information.
+Distributed under the GPL v3 license. See [LICENSE](https://github.com/iShawnWang/StateMachine/blob/master/LICENSE) for more information.
 
 
 [swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
