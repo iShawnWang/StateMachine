@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewStateMachineDemo.swift
 //  StateMachine
 //
 //  Created by iShawnWang on 2017/7/10.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewStateMachineDemo: UIViewController {
     
     let uiStateDelegate = DefaultViewStateMachineDelegate()
     lazy var uiState:ViewStateMachine<DefaultViewStateMachineDelegate> = {
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
             
             let failedView = StateView.loadFromXib()
@@ -34,4 +35,6 @@ class ViewController: UIViewController {
         }
     }
 }
+
+
 

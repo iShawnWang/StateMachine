@@ -16,7 +16,7 @@ import UIKit
 /// - data: table View blabla has data to show
 /// - failed: network failure, DB broken
 /// - noData: no collection, no contacts
-enum ViewState:StateFul{
+enum ViewState{
     case empty,data(UIView),failed(UIView),noData(UIView)
 }
 
