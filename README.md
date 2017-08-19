@@ -4,6 +4,20 @@
 
 > A simple State Machine to organize your ViewController
 
+# Why use StateMachine
+**This demonstrate the cycle of a basic ViewController**
+
+![](https://ws1.sinaimg.cn/large/006tKfTcly1fiox4orkz9j30kd0avgmo.jpg)
+
+
+I want to show different view to notify user the current state of the App
+
+- refreshing : show ActityIndocator
+- error : show error image and a `retry` button
+- list: show the data that retrived from the network
+    
+#### And this works perfect with [FSM (Finite-state machine)](https://en.wikipedia.org/wiki/Finite-state_machine)
+
 # Usage
 
 There 2 main class, [ViewStateMachine](https://github.com/iShawnWang/StateMachine/blob/master/StateMachine/StateMachine/ViewStateMachine/ViewStateMachine.swift) and [StateMachine](https://github.com/iShawnWang/StateMachine/blob/master/StateMachine/StateMachine/StateMachine.swift)
@@ -84,10 +98,17 @@ Check [StateMachineDemo.swift](https://github.com/iShawnWang/StateMachine/blob/m
     self.stateMachine.enter(state: .success)
 ```
 
+# Thanks
+This project is for studying, you'd prefer using libs below : 
+> [aschuch/StatefulViewController](https://github.com/aschuch/StatefulViewController)
+> [narfdotpl/SwiftyStateMachine](https://github.com/narfdotpl/SwiftyStateMachine)
+
 # Contact
 
 - weibo : [@王大屁帅2333](http://weibo.com/p/1005052848310723/home?from=page_100505&mod=TAB&is_all=1#place)  
 - email : iShawnwang2333@gmail.com
+
+> It seems that my README is a bit longer than the code i write :D
 
 # License
 Distributed under the GPL v3 license. See [LICENSE](https://github.com/iShawnWang/StateMachine/blob/master/LICENSE) for more information.
